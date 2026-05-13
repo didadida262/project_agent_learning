@@ -1,0 +1,92 @@
+
+
+🚀 AI Agent 开发工程师核心进阶方案 (2026版)
+一、 核心技术栈 Checklist
+在面试前，请确保你的简历中包含以下关键词：
+
+编排层：LangGraph (必精通), PydanticAI, CrewAI.
+
+协议层：MCP (Model Context Protocol) —— 这是 2026 年 Agent 的行业标准。
+
+数据层：LanceDB (嵌入式向量库), GraphRAG, pgvector.
+
+工程层：Tauri 2 (Rust), Docker, OpenTelemetry (可观测性).
+
+模型层：Function Calling 优化, Prompt Caching, Token 成本管理。
+
+二、 12 周实战培训计划
+第一阶段：从“对话”到“推理” (第 1-3 周)
+重点： 掌握 Agent 的大脑决策机制。
+
+学习目标：
+
+深度理解 ReAct 模式（Reason + Act）。
+
+精通 LangGraph：学习如何构建带循环的非线性工作流（State Machine）。
+
+PydanticAI：学习如何强制模型输出 100% 准确的结构化数据（JSON）。
+
+实战任务：构建一个“自我纠错”的代码生成 Agent，能够根据编译器的报错信息自动循环修改代码。
+
+第二阶段：构建“企业级”知识大脑 (第 4-6 周)
+重点： 解决 Agent 的健壮性与幻觉问题。
+
+学习目标：
+
+Advanced RAG：学习查询转换、混合检索、以及重排序（Rerank）。
+
+GraphRAG：利用知识图谱处理跨文档的复杂关联查询。
+
+LanceDB 实战：在你的 Tauri 项目中实现完全本地化的向量检索。
+
+实战任务：升级你的 Private-RAG 项目，支持“多跳查询”（例如：分析多个财报文件并对比增长率）。
+
+第三阶段：赋予 Agent 手脚（工具化与协议） (第 7-9 周)
+重点： 学习 2026 年最重要的 Agent 交互标准。
+
+学习目标：
+
+MCP (Model Context Protocol)：编写自定义 MCP 服务器，连接你的本地数据库和 API。
+
+多智能体协作 (Multi-Agent)：学习如何设计“策划者-执行者-质检员”的三层 Agent 架构。
+
+Rust 性能调优：利用 Rust 处理 Agent 的高并发并发任务流。
+
+实战任务：开发一个基于 MCP 协议的本地运维 Agent，能通过自然语言管理 Docker 容器并监控系统负载。
+
+第四阶段：生产级 AIOps 与评估 (第 10-12 周)
+重点： 证明你的 Agent 真的“好用”且“可控”。
+
+学习目标：
+
+可观测性：使用 LangSmith 追踪每一个 Token 的流转。
+
+评估框架：使用 Ragas 或 DeepEval 量化 Agent 的检索准确度和推理逻辑。
+
+成本与延迟优化：学习如何使用模型路由（Model Routing）平衡速度与质量。
+
+实战任务：为你的项目输出一份完整的测试报告，包含检索准确率曲线和 Token 消耗统计。
+
+三、 差异化竞争优势（针对你个人的建议）
+1. 深度利用“Tauri 2 + Rust”标签
+目前的 AI 市场不缺写 Python 脚本的人，但极缺能写高性能端侧 AI 应用的人。
+
+卖点：强调你能够将 AI 逻辑下沉到 Rust 层，实现极低的内存占用和极高的安全性。
+
+2. 拥抱 MCP 协议
+Anthropic 推出的 MCP 协议已成为 2026 年的主流。
+
+卖点：在面试中展示你如何通过标准协议让 Agent 无缝接入企业现有生态。
+
+3. 从 RAG 转向“Agentic RAG”
+卖点：不要只说你会检索。要展示你的 Agent 如何主动决定何时需要检索、如何验证检索结果的真实性、以及检索失败后如何自我修正。
+
+四、 面试避坑指南
+不要只展示 UI：面试官更看重你的 Trace 图（推理链路）和 Eval 数据。
+
+理解底层原理：能解释清楚 Temperature, Top-P 以及 Context Window 如何影响 Agent 的决策稳定性。
+
+法律与安全：了解 数据脱敏 和 沙箱执行。对于你之前研究的泄露项目，绝对不要在面试中提到你会使用其代码，仅强调你从中学习了 设计模式 (Design Patterns)。
+
+下一步建议：
+尝试在你的 Private-RAG 项目中集成一个简单的 LangGraph 状态机，让它不再是“一问一答”，而是能针对复杂问题“先想、后搜、再写、最后检查”。这个过程就是你转行成功的开始。

@@ -1,0 +1,8 @@
+1. 技术栈：
+前端：react + TypeScript + tailwind + Vite + Framer Motion + axios
+
+2. 整体主题风格默认选择黑灰色系列，参考海外主流炫酷的站点风格。
+
+3. 新增.gitignore文件，配置基本配置
+
+4. 图标库使用fontawesome

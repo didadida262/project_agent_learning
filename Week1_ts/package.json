@@ -8,6 +8,7 @@
     "build": "tsc --noEmit"
   },
   "dependencies": {
+    "dotenv": "^17.2.1",
     "@langchain/core": "^0.3.72",
     "@langchain/langgraph": "^0.4.9",
     "@langchain/openai": "^0.6.9",

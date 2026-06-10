@@ -2,7 +2,7 @@
 import os
 
 # 1. 填入你提供的真实 API Key
-os.environ["OPENAI_API_KEY"] = "sk-TACbJg3jbxEjjaiSANsCBA1ZDyM8khqAT7moQSw9"
+os.environ["OPENAI_API_KEY"] = ""
 
 # 2. 填入你给出的专属调用地址
 os.environ["OPENAI_API_BASE"] = "https://aiplatform.njsrd.com/llm/v1" 
